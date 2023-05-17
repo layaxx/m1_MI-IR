@@ -1,21 +1,19 @@
 {
   "query": {
     "bool": {
-      "must": [
+      "must_not": [
         {
           "match": {
             "text_entry": "my lord"
           }
         }
       ],
-      "must_not": [
+      "must": [
         {
           "match": {
             "text_entry": "you shall not"
           }
-        }
-      ],
-      "filter": [
+        },
         {
           "range": {
             "speech_number": {
