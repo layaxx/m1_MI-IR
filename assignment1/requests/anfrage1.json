@@ -1,0 +1,26 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "play_name": "Antony and Cleopatra"
+          }
+        }
+      ],
+      "should": [
+        {
+          "match": {
+            "speaker": "demetrius"
+          }
+        },
+        {
+          "match": {
+            "speaker": "antony"
+          }
+        }
+      ],
+      "minimum_should_match": 1
+    }
+  }
+}
