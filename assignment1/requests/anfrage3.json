@@ -1,0 +1,20 @@
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        {
+          "match": {
+            "speaker": "Clown"
+          }
+        }
+      ],
+      "must": [
+        {
+          "regexp": {
+            "speaker": ".*clown.*"
+          }
+        }
+      ]
+    }
+  }
+}

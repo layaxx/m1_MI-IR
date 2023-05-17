@@ -1,0 +1,50 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              {
+                "match": {
+                  "speaker": "queen"
+                }
+              },
+              {
+                "match": {
+                  "speaker": "princess"
+                }
+              },
+              {
+                "match": {
+                  "speaker": "prince"
+                }
+              },
+              {
+                "match": {
+                  "speaker": "king"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "bool": {
+            "should": [
+              {
+                "match": {
+                  "text_entry": "love"
+                }
+              },
+              {
+                "match": {
+                  "text_entry": "lies"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

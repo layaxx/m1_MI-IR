@@ -7,3 +7,12 @@ The elasticSearch requests are in the `requests` subfolder, and can be executed 
 ```bash
 curl localhost:9200/shakespeare/_search?pretty -H "Content-Type: application/json" -d @file_with_query.json
 ```
+
+# Unit Test status:
+Tasks 1-4 currently pass, for the task 7:
+- [x] 7.1
+- [ ] 7.2
+- [ ] 7.3
+- [x] 7.4
+- [x] 7.5
+- [ ] 7.6
