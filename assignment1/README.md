@@ -11,8 +11,8 @@ curl localhost:9200/shakespeare/_search?pretty -H "Content-Type: application/jso
 # Unit Test status:
 Tasks 1-4 currently pass, for the task 7:
 - [x] 7.1
-- [ ] 7.2
-- [ ] 7.3
+- [x] 7.2
+- [x] 7.3
 - [x] 7.4
 - [x] 7.5
 - [ ] 7.6

@@ -4,14 +4,14 @@
       "must_not": [
         {
           "match": {
-            "speaker": "Clown"
+            "speaker.keyword": "Clown"
           }
         }
       ],
       "must": [
         {
-          "regexp": {
-            "speaker": ".*clown.*"
+          "match": {
+            "speaker": "Clown"
           }
         }
       ]
