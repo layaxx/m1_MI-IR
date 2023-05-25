@@ -3,14 +3,14 @@
     "bool": {
       "must_not": [
         {
-          "match": {
+          "match_phrase": {
             "text_entry": "my lord"
           }
         }
       ],
       "must": [
         {
-          "match": {
+          "match_phrase": {
             "text_entry": "you shall not"
           }
         },
