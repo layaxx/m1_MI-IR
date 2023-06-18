@@ -1,7 +1,6 @@
 package de.uniba.minf.ir.toEdit.dgap;
 
 import de.uniba.minf.ir.toolkit.dgap.*;
-import kotlin.NotImplementedError;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
@@ -38,8 +37,8 @@ public class DGapSearcherJ implements DGapSearcher {
         }
         skipPointer = previous;
 
-        int index  = skipPointer.getIndex();
-        long dokID  = skipPointer.getDocumentNumber();
+        int index = skipPointer.getIndex();
+        long dokID = skipPointer.getDocumentNumber();
 
         // Skip n Elements according to skipPointer
         Iterable<Integer> iterable = () -> dGapIndex.dGaps();
@@ -54,6 +53,6 @@ public class DGapSearcherJ implements DGapSearcher {
         }
 
         // Fallback: Value was not found
-        throw new ValueNotInIndexException("fallthrough");
+        throw new ValueNotInIndexException(toFind);
     }
 }
