@@ -1,6 +1,16 @@
 # Assignment 3, group 11
 
-## Task 3.1
+## Task 1
+
+### Task 1.2.b
+
+Beim ZigZag Encoding werden alle Zahlen vor der VByte Komprimierung auf positive Zahlen gemappt.
+
+### Task 1.3.b
+
+VarIntGB ist auf modernen CPUs effizienter ausführbar als VByte, da durch die Sammlung der Meta Daten bei der Dekomprimierung weniger Vergleiche ausgeführt werden (bekannte Länge, also keine Suche nach Continuation Bits) und auch weniger Veränderungen an den Daten durchgeührt werden müssen (Bytes können komplett kopiert werden, ohne Continuation Bit zu entfernen).
+
+## Task 3
 
 ### 3.1.1
 
